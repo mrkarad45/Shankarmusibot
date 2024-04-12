@@ -29,16 +29,16 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 bot = Client(
     name=":memory:",
-    api_id=api_id,
-    api_hash=api_hash,
-    bot_token=bot_token,
+    api_id=api_id,21659643,
+    api_hash=api_hash,"c5f065905ef47e693b47e0f60bb67217",
+    bot_token=bot_token,"7074952314:AAHWCX4U0RyMq4VIuS-ZgQA5oRo0pCdhKpQ",
 )
 
 SUDOERS = filters.user()
 
-for x in sudo_users:
+for x in sudo_users:6466356042
     SUDOERS.add(int(x))
-if owner not in SUDOERS:
+if owner not in SUDOERS:6466356042
     SUDOERS.add(int(owner))
 
 @bot.on_message(filters.command(["start"]) & SUDOERS)
